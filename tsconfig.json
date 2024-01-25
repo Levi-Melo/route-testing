@@ -1,0 +1,26 @@
+{
+    "include": ["src", "tests", "src/main.ts"],
+    "compilerOptions": {
+      "typeRoots": ["/infra/api/@types"],
+      "target": "ES2021",
+      "module": "commonjs",
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+      "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+      "strictNullChecks": true,
+      "strictBindCallApply": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": false,
+      "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "baseUrl": "src",
+      "paths": {
+        "@/*": ["*"],
+      },
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    }
+  }
+  
